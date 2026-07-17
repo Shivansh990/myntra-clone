@@ -1,0 +1,202 @@
+.myntraweb-sprite{
+    background: url(https://constant.myntassets.com/web/assets/img/MyntraWebSprite_27_01_2021.png);
+    background-size: 1404px 105px;
+    display: inline-block;
+}
+
+.wishlistEmpty-icon {
+    margin: 43px 0 50px;
+    display: inline-block;
+}
+
+.sprites-emptyIcon {
+    width: 96px;
+    height: 105px;
+    background-position: -1163px 0;
+}
+
+*{
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+.empty-container {
+    max-width: 980px;
+    margin: 250px auto 250px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+.empty-heading {
+    font-size: 20px;
+    font-weight: 600;
+    color: #282c3f;
+    margin: 20px auto 0;
+    text-align: center;
+}
+
+.empty-info {
+    font-size: 18px;
+    color: #94989f;
+    max-width: 380px;
+    margin: 20px auto 0;
+    text-align: center;
+}
+
+.empty-button {
+    border: 1px solid #3466e8;
+    border-radius: 4px;
+    padding: 14.5px 51px;
+    color: #3466e8;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 800;
+    letter-spacing: 0.6px;
+}
+
+.wishproduct-container{
+            display: flex;
+            flex-direction: column;
+            width: 82%;
+            margin: 80px auto 150px;
+        }
+
+        .wishlist{
+            list-style-type: none;
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            column-gap: 50px;
+            row-gap: 40px;
+        }
+
+        .wishproduct{
+            width: 220px;
+            max-width: 220px;
+            height: 425px;
+            overflow: hidden;
+            border: 1px solid #e9e9eb;
+            display: flex;
+            flex-direction: column;
+            z-index: 40;
+        }
+
+        .product-image{
+            position: relative;
+            min-height: 290px;
+        }
+
+        .wish-img{
+            width: 100%;
+        }
+
+        .remove-btn{
+            position: absolute;
+            top: 11px;
+            right: 11px;
+            height: 25px;
+            width: 25px;
+            background-color: hsla(0, 0%, 100%, .6);
+            border-radius: 50%;
+            border: 1.2px solid #d4d5d9;
+            text-align: center;
+            cursor: pointer;
+            color: black;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .detail-container{
+            height: 140px;
+            max-width: 100%;
+            background-color: white;
+            flex-grow: 1;
+            z-index: 20;
+        }
+        
+        .wishproduct-detail{
+            padding: 10px 10px 0px;
+            height: 88px;
+            border-bottom: 1px solid #e9e9eb;
+        }
+
+        .wishproduct-brand{
+            color: #282c3f;
+            font-size: 16px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-align: center;
+            width: 100%;
+            white-space: nowrap;
+            margin-bottom: 12px;
+        }
+
+        .wishproduct-discount{
+            color: #282c3f;
+            font-size: 16px;
+            font-weight: 700;
+            text-align: center;
+            padding-right: 3px;
+        }
+
+        .wishproduct-original{
+            color: #282c3f;
+            font-size: 12px;
+            opacity: 0.7;
+            margin-left: 3px;
+            text-decoration: line-through;
+            text-align: center;
+            padding: 0px 3px;
+        }
+
+        .wishproduct-price{
+            width: 100%;
+            text-align: center;
+        }
+
+        .wishproduct-offer{
+            color:#ff905a;
+            font-size:12px;
+            font-weight: 700;
+            margin-left: 3px;
+            text-align: center;
+            padding: 0px 3px;
+        }
+
+        .wish-cart{
+            color:#ff3e6c;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 14px;
+            text-align: center;
+            background-color: white;
+            border-color: transparent;
+            border: 0px;
+            cursor: pointer;
+            width: 80%;
+        }
+
+        .wish-move{
+            display: flex;
+            align-items: center;
+            padding-top: 12px;
+            justify-content: center;
+            flex-grow: 1;
+            background-color: white;
+        }
+
+        .headers-wish{
+            font-size: 18px;
+            color: #282c3f;
+            font-weight: 700;
+            padding: 50px 0px;
+        }
+
+        .noofitems{
+            font-size: 18px;
+            color: #282c3f;
+            font-weight: 400;
+        }

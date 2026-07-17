@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/product.css">
+  <script src="https://kit.fontawesome.com/7fad7e8cc3.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <title>Myntra - Buy Myntra online in India</title>
+  <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAKSElEQVR42u1ZeVRU5xUviolNoh6RRRZxw7iTtLhhbWNd0kStptG4YDEpiXWJG4laqcbdiFalxgU1Vot41CSiEgQVNARRCCqgIqjsKiCCgMMww+y/3vsOY8MZmPcGNfrH+51zz3AO8+537+/+7v2+782vZMiQIUOGDBkyZMiQIUPGE0Kn0/U3mUzHABSTHSXzelKfAFobjcaNdT4zyIa/iLnbUfKzABiqkq7jctAMPMq8BEIl2cim+qysrPQkQrOMahUuzVyH/N3RIJiIkMUvVPIqlSqAA7ux4r9Y6+yM1Y6O2ODujJwDm0HQkv3BVp+lpaXOlGiBMicTu7p0Yp+CxQyfCQb9b8kLkXxFRcVgAJqMVWFY4+iMqCG9kL+gO86M7oT1rs64c3wvCBU2tINdfHx8S1JUsqa0CDu6umG3RxdkuK5BQvtPEezoYSbBZDAYxj/X5G/fvu1IlSgpjb6MDU6euOQaBOPaIcBWb8Fuznodmzu6CO1AUk4F0EKC32ZqtToEBgMO9u+Ob3q3g6LfHNR4fC9YoXsoNjl1xpX520BQkvV8XgQ0p0C/01cqsc2tL1JcFwsBmoJ9OfnHljG9G/YP8IJJp2HZrhcj9cGDByNZ4ednTkR4D0coPmgLpU8g+35sBe47BRJKTwrEXgFg/zykPwmEk0OnI7r91MfBGdcJCqhncWM64vy8CSDoyfo05vPMmTOvkqzvlMadQGhnJ1S83xbVTEC/Bey7nqW7rsBuzwEwafVM7LJfNPm4uLg2LP2CPTHY4zwASo8T/ydg+QgLAkz/9kZYPw88vHyWK3YBgF1D0q+url7P0t/fxxMFoxw4ecGUg6ZbEEBGxPvhxwlB5kH7+i9FAAe6hZnf02Eg7rrvqReUYeE4TtrCKpb3wqG3eoJBVQ5oYJ70IHI0lxYGIMG3LnkzAb+f1CABCo8I7HLxQWXSTSY2mv088+rn5OT0YsaT/vYlTeU5FkHp/v4hJ9ygpfh1QVbochDKyVr/fJ7U1taeVt/Nw6HeLpx0fQKGD2ffDVqu+1Yc8X7PTOyoZz74aM8/ri54gH1uQ8zSr2faiYGNEgBqhYhh3WBQKbhvV5pJLSoqGg5C7IQ/onCMgyUBo73Zd6MW6fIB8nadZBVkAmj2zKqfl5fXH4DpzDvzkO22ucFgaodu4GQbtftBPXF5eQAICjIH8mtP1b9YdSURZwc4csKWNsEJNZ4nGiXgocdhHOz2J7MKpj6z6rNMq2/cwTH3vzQajKp3GCdq1RKn9IJRXQ29Xr/h3r17o0CInzwMleM54YZN9WaYVRUkuX6GrPWHWQU5AJo/9epnZ2cPBOHU8Fkocv/aajCmrwZbJUAd3Ac3ty0GoYZOfNeVWem4OsKZErVCwLDNVtfkdjziNcasAv+nXn2lUvmdOu8+Ytz9eUHrBGyfLKqC3MUDYdJrwchcOJmTtE7A+4tE173iuhS5O75nFVx7mjuCXWpqqhcAfcKEpSj1OCAaiHHnF6IEGEO8UXIsBLX38lH4XntxAj6azL5FLdb3UxC4vd5+atWvqqraqq9S4VSnjyQFYYyN5iRFrWLTCJSEzOcERa12ywyousWIq8B9KSqTb7MKYp6GCuxWrlz5Cm1Z5emLdpsPPVZN1T0GUCuBbb8VJyGkL8r9PCURoP/hIDRTf+I1RGdB8oQ1IBhpaHd84lMf7dHTQEjo/7mk6mumpUDAt/6iBOiXeXFyksxUfg+60FxJMaR0/Sf4kkaFW/2kBNjTje+Hstg0uo+vlbS4fm8+BCTvECVA/XF7ScnXzOsHhjFTISkGPhekLdjJbVAEwK7J8o+MjHQDoLvkt4EcR0pa3FSkhoDyW1aTN/2rF5QSq68JXwEz1L5nJcWRPGgZGFRA3ybLv7i4eA4IaW+slrRo7ejzYNDQjAMjbHSjBOgWd5Ysf2NOKugIfg2ASbc2S1Ist902QXG9UDhsNVn+NTU1Z/mlQ7H7fyQtqtuZy31XERQU5AvAgAshVuTvIk3+s/qCkZ6ePp/iuWxMr+K1JNmNz/ZxG9xqym5gFxAQ0IoeVmUHHpK0mKpDFEx31VAoFAfoeWe6Miej7GbDBGzqY4v8OYnawMBA98zMzJWCrAdLa4Obb28HQ6vV9rBZ/levXhVuF4WjD0qT/5RkMOjIPIKef5UOT4vAODzJcvov7yZ9+hfngE6hR8nnyzNmzHiDyNDqtuVIiqmgSygMNbWg4/Z8mw8/JSUl6wwqDUq7SiPAcLKEmb5Nz7bg9hk6dKgXtUM1rn9jQYBmfgdJyau/eBeMwsLCd9knWbuHDx9GmR5ooOp0UkJckSg9+hPfDcJsbQN7GmTHlUn5kpJX+8QCehPKysqCWD111pZIDIdODewa0qTtT58cydXL9fHxaVGXQMvo6Gg/EDQzrkjbErck8Vyy+W7wEp2iMtQR0qSm35PHizwKCwtrxwvV2csbN258C4ARF7fWI6BmSjvx4TfnNyCnIBID6whlsApcaUe4Ycx4JCm2ys8TQNDS/HjJFgL47WyZaluG+PDzPgOoDSgvLw/h1vl5G5E509vjU1BXAKGDIBCwpa/koy/FUB4cHNzGXL26z9eSk5PnCSrwTxGNT/HXeDAePXrU2RYC+AdJhWZLpnj19xeAvxsREeFRX2bC37/evn37SAAGpISadwDxm1+gr1B9Oof8QyCyvk97BweHDqTQW8YsBVQdo6wXaFIiCNyeNv1Q24YlTfu69cn/TgILnANdIcjTEoIK6He+IzBogLAxpADrBCgnOsCQeZEHasHs2bNfs+xdoR1anTp16kNB28tvWIuRVWImoJtNCmCGDdEljTrmq6npZjU0Gk3W3LlzWzcyZITB5efn9ya3FIrT+JZodQZo9i8BwXTt2rWxTGAjPplsN2qvaNQYoB4a32ic2i8yBH+5ubnONs0AGj5hUOih8oq2TN4zCoYTxeD3+OfOnRtsEahlxdrGxsZ+AsDI26JmjkfD296qcYBBz9X6mgexmdRGSHiFiaWj7n1TrhKqPqcb3p4TylhNaUKMNqBFeHj4aO5dmvAW931DVAkIBqrSx/xdkS3Gru47brdu3doolOPCbtT4OdZ/4bGZFK2t5UNPwsCBA1ubJ78YsXv37v0znzdM2Uqof3euvvw/uQwGKWWVuD/L3nXJz8//CgTjhXJo12SCZ4KpTMOVr0lLS5vJ8pa4vwrbIlkH2o6+BJ8aijOgPbCEJB8Ew/UfwaisrIwZO3asC68vwa+5FZyoWONZCdAaoT9yF9rVmdBH3GO98SXqkuUskR6wZ2Ji4jyaB9kAdNzHhG937NgxhCe8jU7t6gjz2Ldv3ziqymkmksmgS05qSkrKXK6opOQt1eXk7+/f786dO7tI7pQ5tDSbculXrOBp06a5i8hflASuSGcyL7KOZO1E+lNKwA5MLvts2bJlF/pszz1tkbx0n/xcKzJOlv11ZaJ5mIv4lOzc3nzG514SdSjus5nZZ501f0o+m7M/i1hlyJAhQ4YMGTJkyJAhQ0Z9/A/MGjKdMt/y6AAAAABJRU5ErkJggg==">
+
+ <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+
+
+</head>
+<body>
+
+  <header class="heading">
+
+<a href="#" class="logo-1">
+    <img src="../images/myntra_logo.webp" alt="myntra logo" class="logo"
+    height="39px"
+    width="53px"
+    >
+    </a>
+
+    <nav class="heading-container1">
+
+      <a href="../html/product.html"  class="link-1" id="l1">MEN</a>
+      <a href="../html/product.html"  class="link-1" id="l2">WOMEN</a>
+      <a href="../html/product.html"  class="link-1" id="l3">KIDS</a>
+      <a href="../html/product.html"  class="link-1" id="l4">HOME</a>
+      <a href="../html/product.html"  class="link-1" id="l5">BEAUTY</a>
+      <a href="../html/product.html"  class="link-1" id="l6">GENZ</a>
+      <a href="../html/product.html"  class="link-1" id="l7">STUDIO<sup>NEW</sup></a>
+
+    </nav>
+
+    <div class="input-container">
+
+      <span class="fa-solid fa-magnifying-glass search"></span>
+      <input type="text" placeholder="Search for products, brands and more" class="search-bar" >
+    </div>
+
+    <div class="heading-container2">
+
+       <div class="link-2">
+
+        <span class="fa-regular fa-user action-idivg"></span>
+        <span class="action" id="profiles">Profile</span>
+
+        <div class="phover-container1">
+          <div class="p-container1">
+        <div class="p-welcome">Welcome</div>
+        <div class="p-request">To access account and manage orders</div>
+        <div class="p-button">LOGIN / SIGNUP</div>
+        </div>
+
+        <div class="p-container2">
+            <a href="../html/profile.html" class="p-link1">Bag</a>
+            <a href="../html/profile.html" class="p-link2">Wishlist</a>
+        </div>
+
+    </div>
+
+    <div class="phover-container2">
+        <div class="p-container1">
+        <div class="p-name"></div>
+        <div class="p-number"></div>
+        <div class="p-button1">LOGOUT</div>
+        </div>
+
+        <div class="p-container2">
+            <a href="../html/cart.html"  class="p-link1">Bag</a>
+            <a href="../html/wishlist.html" class="p-link2">Wishlist</a>
+        </div>
+
+    </div>
+
+
+      </div>
+      
+      <a href="../html/wishlist.html" class="link-2">
+
+        <span class="fa-regular fa-heart action-img"></span>
+        <span class="action">Wishlist</span>
+
+      </a>
+
+      <a href="../html/cart.html" class="link-2">
+
+        <span class="fa-solid fa-bag-shopping action-img"></span>
+        <span class="action">Bag</span>
+         <div class="noOfItems"></div>
+
+      </a>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <div class="before-item1"><a href="../html/index.html" class="t-1">Home</a><span class="t-2">/</span><span class="t-3">Myntra</span></div>
+    <div class="before-item2"><span class="t-4">Myntra</span><span class="t-5">-</span><span class="t-6">50 items</span></div>
+    <div class="before-item3">FILTERS <span class="t-7">CLEAR ALL</span></div>
+
+    <div class="item-container" id="container-1">
+
+       <div class="fliters">
+
+        <div class="fill-1">
+     
+        <label for="btn-1" class="b-1">
+          <input type="radio" name="gender" id="btn-1" class="bb-1" value="men">
+          <span class="text-1">Men</span>
+        </label>
+
+        
+
+         <label for="btn-2" class="b-1">
+          <input type="radio" name="gender" id="btn-2" class="bb-1" value="women">
+          <span class="text-1">Women</span>
+        </label>
+
+       <label for="btn-3" class="b-1">
+          <input type="radio" name="gender" id="btn-3" class="bb-1" value="boy">
+          <span class="text-1">Boys</span>
+        </label>
+
+         <label for="btn-4" class="b-1">
+          <input type="radio" name="gender" id="btn-4" class="bb-1" value="girl">
+          <span class="text-1">Girls</span>
+        </label>
+
+      </div>
+
+      <div class="fill-2">
+
+        <h3 class="filter-heading">Categories</h3>
+
+        <label for="ch-1" class="c-1">
+          <input type="checkbox" name="Tshirts" id="ch-1" class="cc-1" value="tshirt">
+          <span class="text-2">Tshirts</span>
+        </label>
+
+        <label for="ch-2" class="c-1">
+          <input type="checkbox" name="Kurta Sets" id="ch-2" class="cc-1" value="kurta">
+          <span class="text-2">Kurta Sets</span>
+        </label>
+
+        <label for="ch-3" class="c-1">
+          <input type="checkbox" name="Facewashes" id="ch-3" class="cc-1" value="facewash">
+          <span class="text-2">Face Wash</span>
+        </label>
+
+        <label for="ch-4" class="c-1">
+          <input type="checkbox" name="Shoes" id="ch-4" class="cc-1" value="shoes">
+          <span class="text-2">Shoes</span>
+        </label>
+
+        <label for="ch-6" class="c-1">
+          <input type="checkbox" name="Hair Oils" id="ch-6" class="cc-1" value="hairoil">
+          <span class="text-2">Hair Oil</span>
+        </label>
+
+        <label for="ch-7" class="c-1">
+          <input type="checkbox" name="Face Serums" id="ch-7" class="cc-1" value="faceserum">
+          <span class="text-2">Face Serum</span>
+        </label>
+
+        <label for="ch-5" class="c-1">
+          <input type="checkbox" name="Sofa Covers" id="ch-5" class="cc-1" value="sofacover">
+          <span class="text-2">Sofa Covers</span>
+        </label>
+
+        <label for="ch-8" class="c-1">
+          <input type="checkbox" name="Others" id="ch-8" class="cc-1" value="other">
+          <span class="text-2">Others</span>
+        </label>
+
+
+      </div>
+
+      <div class="fill-3">
+
+      <h3 class="filter-heading">Brand</h3>
+
+      <label for="cd-1" class="c-1">
+          <input type="checkbox" name="Puma" id="cd-1" class="dd-1" value="puma">
+          <span class="text-2">Puma</span>
+        </label>
+
+        <label for="cd-2" class="c-1">
+          <input type="checkbox" name="Adidas" id="cd-2" class="dd-1" value="adidas">
+          <span class="text-2">Adidas</span>
+        </label>
+
+        <label for="cd-3" class="c-1">
+          <input type="checkbox" name="Lakme" id="cd-3" class="dd-1" value="lakme">
+          <span class="text-2">Lakme</span>
+        </label>
+
+        <label for="cd-4" class="c-1">
+          <input type="checkbox" name="Mamaearth" id="cd-4" class="dd-1" value="mamaearth">
+          <span class="text-2">Mamaearth</span>
+        </label>
+
+        <label for="cd-5" class="c-1">
+          <input type="checkbox" name="Sangria" id="cd-5" class="dd-1" value="sangria">
+          <span class="text-2">Sangria</span>
+        </label>
+
+        <label for="cd-6" class="c-1">
+          <input type="checkbox" name="LOreal" id="cd-6" class="dd-1" value="loreal">
+          <span class="text-2">LOreal</span>
+        </label>
+
+        <label for="cd-7" class="c-1">
+          <input type="checkbox" name="HRX by Hrithik Roshan" id="cd-7" class="dd-1" value="hrx by hrithik roshan">
+          <span class="text-2">HRX by Hrithik Roshan</span>
+        </label>
+
+        <label for="ch-8" class="c-1">
+          <input type="checkbox" name="Others" id="ch-8" class="dd-1" value="other">
+          <span class="text-2">Others</span>
+        </label>
+        
+      </div>
+
+      <div class="fill-4">
+
+        <h3 class="filter-heading">PRICE</h3>
+        <label for="range-container" class="f-1">
+          <input type="range" id="min" min="0" max="10000" value="10000" step="200" class="range-slider">
+        </label>
+        <div class="text-4">₹0 - ₹10,000+</div>
+      </div>
+
+      <div class="fill-5">
+
+        <h3 class="filter-heading">Discount Range</h3>
+
+        <label for="a-1" class="d-1">
+          <input type="radio" name="discount" id="a-1" class="bb-2" value="10">
+          <span class="text-3">10% and above</span>
+        </label>
+
+        <label for="a-2" class="d-1">
+          <input type="radio" name="discount" id="a-2" class="bb-2" value="20">
+          <span class="text-3">20% and above</span>
+        </label>
+
+        <label for="a-3" class="d-1">
+          <input type="radio" name="discount" id="a-3" class="bb-2" value="30">
+          <span class="text-3">30% and above</span>
+        </label>
+
+        <label for="a-4" class="d-1">
+          <input type="radio" name="discount" id="a-4" class="bb-2" value="40">
+          <span class="text-3">40% and above</span>
+        </label>
+
+        <label for="a-5" class="d-1">
+          <input type="radio" name="discount" id="a-5" class="bb-2" value="50">
+          <span class="text-3">50% and above</span>
+        </label>
+        
+        <label for="a-6" class="d-1">
+          <input type="radio" name="discount" id="a-6" class="bb-2" value="60">
+          <span class="text-3">60% and above</span>
+        </label>
+
+        <label for="a-7" class="d-1">
+          <input type="radio" name="discount" id="a-7" class="bb-2" value="70">
+          <span class="text-3">70% and above</span>
+        </label>
+
+        <label for="a-8" class="d-1">
+          <input type="radio" name="discount" id="a-8" class="bb-2" value="80">
+          <span class="text-3">80% and above</span>
+        </label>
+
+        <label for="a-9" class="d-1">
+          <input type="radio" name="discount" id="a-9" class="bb-2" value="90">
+          <span class="text-3">90% and above</span>
+        </label>
+
+      </div>
+</div>
+        
+
+        <ul type="none" class="item-list" id="container-2">
+        </ul>
+
+      <div class="back-forward" id="container-3">
+      <pre style="color:#6e6e7a;font-weight:700;margin-right:9px;padding:6px 8px;"><<  Page 1</pre>
+
+      <button style="border: 1px solid #d4d5d9; border-radius:4px; text-align:center;padding:10px 22px;margin-right:64px;margin-left:14px;height:42px;color: #6e6e7a;background-color:white;"><pre style="color: #6e6e7a;font-weight:700;"><  Previous </pre></button>
+
+      <p style="color:#535766;font-weight:400;font-size:14px;margin-right:9px;padding:6px 8px;margin-top:3px;">Page 1 of 1</p>
+    </div>
+       
+    </div>
+
+  </main>
+
+  <footer>
+
+    <div class="footer-container1">
+
+      <div class="footer-1 footer-8">
+
+        <p> ONLINE SHOPPING </p>
+
+        <a href="../html/product.html" style="padding-top: 15px;">Men</a>
+        <a href="../html/product.html">Women</a>
+        <a href="../html/product.html">Kids</a>
+        <a href="../html/product.html">Home</a>
+        <a href="../html/product.html">Beauty</a>
+        <a href="../html/product.html">Genz</a>
+        <a href="../html/product.html">Gift Cards</a>
+        <a href="../html/product.html">Myntra Insider</a>
+
+        <p id="footer1-8-1">USEFUL LINKS</p>
+        <a href="#">Blog</a>
+        <a href="#">Careers</a>
+        <a href="#">Site Map</a>
+        <a href="#">Whitehat</a>
+        <a href="#">Cleartrip</a>
+
+      </div>
+
+      <div class="footer-1 footer-8">
+        <p> CUSTOMER POLICIES </p>
+
+        <a href="#" style="padding-top: 15px;">Contact Us</a>
+        <a href="#">FAQ</a>
+        <a href="#">T&C</a>
+        <a href="#">Terms Of Use</a>
+        <a href="#">Track Orders</a>
+        <a href="#">Shipping</a>
+        <a href="#">Cancellation</a>
+        <a href="#">Returns</a>
+        <a href="#">Privay Policy</a>
+        <a href="#">Grievance Redressal</a>
+
+      </div>
+
+      <div class="footer-1 footer1-3"  >
+        <p>
+          EXPERIENCE MYNTRA APP ON MOBILE </p>
+
+          <div class="footer1-4">
+          <a href="#">
+            <img src="../images/headers/footer/footer1.png" alt="">
+          </a>
+
+          <a href="#">
+            <img src="../images/headers/footer/footer2.png" alt="">
+          </a>
+
+          </div>
+          
+          <p style="margin-top: 30px;">KEEP IN TOUCH</p>
+
+          <div class="footer1-5">
+          <a href="#">
+          <img src="https://constant.myntassets.com/web/assets/img/d2bec182-bef5-4fab-ade0-034d21ec82e31574604275433-fb.png" alt="">
+          </a>
+
+          <a href="#">
+          <img src="https://constant.myntassets.com/web/assets/img/f10bc513-c5a4-490c-9a9c-eb7a3cc8252b1574604275383-twitter.png" alt="">
+          </a>
+
+          <a href="#">
+          <img src="https://constant.myntassets.com/web/assets/img/a7e3c86e-566a-44a6-a733-179389dd87111574604275355-yt.png" alt="">
+          </a>
+
+          <a href="#">
+          <img src="https://constant.myntassets.com/web/assets/img/b4fcca19-5fc1-4199-93ca-4cae3210ef7f1574604275408-insta.png" alt="">
+          </a>
+
+          </div>
+
+      </div>
+
+      <div class="footer-right">
+
+        <div class="footer-right-1">
+        <img src="https://constant.myntassets.com/web/assets/img/6c3306ca-1efa-4a27-8769-3b69d16948741574602902452-original.png" alt="">
+        <div>
+        <strong>100% ORIGINAL</strong>
+         guarantee for <br> products at myntra.com
+        </div>
+      </div>
+
+        <div class="footer-right-2">
+        <img src="https://assets.myntassets.com/assets/images/retaillabs/2023/5/22/becb1b16-86cc-4e78-bdc7-7801c17947831684737106127-Return-Window-image.png" alt="">
+        <div>
+        <strong>Return within 14days</strong>
+        of <br>receiving your order
+        </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="footer-container2">
+
+      <h1>
+        ONLINE SHOPPING FOR WOMEN: MYNTRA ALL THE WAY
+      </h1>
+
+      <p>
+         When it comes to women, shopping is more than just a therapy. We believe that it is a joyous activity where you get to choose a whole new lifestyle. If you would like access to a wide variety of products for women online shopping is the way to go. And of all the online shopping sites for women, Myntra is the place to find the finest brands of women's fashion and lifestyle products. The women's shopping range at Myntra includes the best price merchandise of top-notch quality.
+      </p>
+
+      <h3>
+        WOMEN'S ONLINE SHOPPING: CLOTHES, ACCESSORIES, FOOTWEAR, AND MORE
+      </h3>
+
+      <p>
+        While a few online shopping sites for women might focus on apparel, others on ethnic wear, and yet others on home décor, Myntra brings you everything under one roof. Here is a list of must-haves from the wide variety of awesome products at Myntra:
+      </p>
+
+      <ol type="1">
+
+        <li>
+          Your online shopping clothes list should include a healthy mix of apparel suitable for casual, formal and festive occasions. Look cool in T-shirts, tops and jeans. Ooze maximum oomph with our top-of-the-range dresses. Climb up the corporate ladder with chic formal wear. Try the ethnic touch with our pretty printed-kurtas, Patiala salwars and dhotis. Stride into a wedding with confidence in a lehenga choli or an elegant saree.
+        </li>
+
+        <li>
+          If you are generally reluctant to step out to purchase innerwear for women online shopping provides a comfortable, private setting where you can shop in peace. Right from basic bras and briefs, to shape wear and swimwear, we have an option for each of your needs. You can include in your online clothes shopping list cosy winter wear and sporty sweatshirts and tracksuits as well.
+        </li>
+
+        <li>
+          Once you are done with your online clothes shopping, it is time to buy smart jewellery. Our range of pretty rings, necklaces, bracelets and more have been crafted to highlight your natural beauty. You can find smart accessories here as well such as handbags, purses, sunglasses and beautiful analogue and digital watches for any occasion.
+        </li>
+
+        <li>
+        Your online women's shopping adventure should include a trip to our footwear section. Feel fabulous in fine footwear from the best brands crafted to perfection. Be it handcrafted mojaris and juttis or single-toe flats from our ethnic section, or pumps and peep-toe shoes from our western section, you are sure to be dressed to impress.</li>
+
+      </ol>
+
+      <p>
+      And there are more fabulous products such as sportswear, blazers, gowns, dress material, bath accessories, kajal and makeup for women online. The women’s online shopping experience at Myntra is filled with unlimited choices!
+      </p>
+
+      <h3>
+        ONLINE SHOPPING FOR WOMEN MADE EASY
+      </h3>
+
+      <p>
+        The women's shopping experience at a physical store is fraught with problems. Long payment queues, crowded shops and struggles for parking spaces are not enjoyable. At Myntra you can complete your shopping and make your payment in a jiffy. Just a few clicks, or a few taps on your smartphone, and you are done! Enjoy your online women's shopping journey at Myntra and get set to redefine your lifestyle.
+      </p>
+    </div>
+
+
+    <div class="footer-container3" >
+
+      <div>In case of any concern, <a href="#"> Contact Us </a></div>
+
+      <div>© 2025 www.myntra.com. All rights reserved.</div>
+
+      <div> A Flipkart company </div>
+
+    </div>
+
+  </footer>
+
+
+
+</body>
+<script src="../javascript/data.js"></script>
+<script src="../javascript/profile.js"></script>
+<script src="../javascript/product.js"></script>
+
+
+ 
+</html>
+
