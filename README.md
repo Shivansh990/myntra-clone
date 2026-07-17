@@ -1,4 +1,4 @@
-# 🛍️ Myntra CLone
+# 🛍️ Myntra Clone
 
 A frontend e-commerce website inspired by Myntra, built using **HTML**, **CSS**, and **JavaScript**. The application provides a shopping experience with product browsing, search, filtering, authentication, cart, and wishlist management using Local Storage.
 
